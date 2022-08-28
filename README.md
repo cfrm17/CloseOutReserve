@@ -1,6 +1,6 @@
 # CloseOut Reserve
 
-A model is presented to calculate the monthly Close-Out Reserve of the structured interest rate derivatives. Products cover vanilla swaptions, Bermudan swaptions, callable swaps, variable notional swaptions, cap and floor and Treasury bond options. 
+A model is presented to calculate the monthly Close-Out Reserve of the structured interest rate derivatives. Products cover vanilla swaptions, Bermudan swaptions, callable swaps, callable exotics (see https://finpricing.com/lib/EqCallable.html), variable notional swaptions, cap and floor and Treasury bond options. 
 
 We can price all kinds of options and get the corresponding Vegas based on the above volatility matrices. Let us consider an option (vanilla or non-vanilla). Given a swaption term, an underlying term and a strike price, if we change the volatility from the above volatility cubic, we can get one Vega by using the definition of Vega. 
 
@@ -18,12 +18,4 @@ It has been determined that the CAD bid/offer matrix will be calculated as a mul
 
 We use the bilinear projection based on the following reasons: (1) the bilinear projection is a standard market
 methodology based on practical conventions; (2) The bilinear projection matrix nicely absorbs most of the information embedded in the original matrix. The summation of each column in the new matrix is equal to the summation of each column in the old matrix. It is a same case for each row.
-
-References:
-
-https://finpricing.com/lib/EqConvertible.html
-
-https://zenodo.org/record/6585388/files/closeOutReserve.pdf
-
-https://zenodo.org/record/6585388#.YpDwxagpDq4
 
